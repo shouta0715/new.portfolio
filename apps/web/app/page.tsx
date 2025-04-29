@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="text-2xl font-bold">
+      <p>Hello World</p>
+      <p>こんにちは</p>
     </div>
   );
 }
