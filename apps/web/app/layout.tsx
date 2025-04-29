@@ -20,7 +20,7 @@ export default function RootLayout({ children }: Props) {
       className={cn(geistSans.variable, notoSans.variable, "font-noto-sans")}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body className="bg-background-100 dark text-gray-1000">{children}</body>
     </html>
   );
 }
