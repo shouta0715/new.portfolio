@@ -1,6 +1,6 @@
+import { cn } from "@/lib/cn";
 import "@repo/tailwind-config/global.css";
 import { GeistSans as geistSans } from "geist/font/sans";
-import { cn } from "../lib/cn";
 import { Noto_Sans_JP } from "next/font/google";
 
 const notoSans = Noto_Sans_JP({
