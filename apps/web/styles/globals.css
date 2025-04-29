@@ -1,4 +1,2 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "@repo/tailwind-config/global.css";
+@import "tw-animate-css";
