@@ -97,9 +97,14 @@
   --color-pink-900: oklch(45% 0.18 350); /* #94124A */
   --color-pink-1000: oklch(15% 0.08 345); /* #330017 */
 
+
+}
+
+@theme inline {
   /* Fonts */
 
   --font-*: initial;
-  --font-geist-sans: "Geist Sans", sans-serif;
-  --font-geist-mono: "Geist Mono", monospace;
+  --font-geist-sans: var(--font-geist-sans), sans-serif;
+  --font-geist-mono: var(--font-geist-mono), monospace;
+  --font-noto-sans: var(--font-geist-sans), var(--font-noto-sans), sans-serif;
 }
