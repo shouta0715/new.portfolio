@@ -1,7 +1,3 @@
-import config from "../../prettier.config.mjs";
+import withTailwind from "@package/prettier-config/tailwind";
 
-export default {
-  ...config,
-  tailwindStylesheet: "./styles/globals.css",
-  plugins: ["prettier-plugin-tailwindcss"],
-};
+export default withTailwind("./styles/globals.css");
