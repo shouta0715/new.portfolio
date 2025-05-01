@@ -1,5 +1,5 @@
 import { cn } from "@/lib/cn";
-import "@repo/tailwind-config/global.css";
+import "@package/tailwind-config/global.css";
 import { GeistSans as geistSans } from "geist/font/sans";
 import { Noto_Sans_JP } from "next/font/google";
 
