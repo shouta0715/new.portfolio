@@ -22,18 +22,12 @@ const config = tseslint.config(
     },
     rules: {
       "unused-imports/no-unused-imports": "error",
+      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/restrict-plus-operands": "error",
+      "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "import/no-unresolved": ["error", { ignore: ["^geist"] }],
       "no-void": ["error", { allowAsStatement: true }],
-      "import/extensions": [
-        "error",
-        "ignorePackages",
-        {
-          ts: "never",
-          tsx: "never",
-          js: "never",
-          jsx: "never",
-        },
-      ],
       "import/no-extraneous-dependencies": [
         "error",
         {
@@ -71,10 +65,6 @@ const config = tseslint.config(
           selector: "WithStatement",
         },
       ],
-      "@typescript-eslint/no-floating-promises": "error",
-      "@typescript-eslint/restrict-plus-operands": "error",
-      "prefer-template": "error",
-      "@typescript-eslint/switch-exhaustiveness-check": "error",
       "unicorn/prefer-switch": [
         "error",
         { emptyDefaultCase: "no-default-case" },
@@ -86,8 +76,8 @@ const config = tseslint.config(
     files: ["**/*.ts", "**/*.tsx"],
     extends: [...tseslint.configs.stylistic],
     rules: {
+      "prefer-template": "error",
       "no-console": "warn",
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "arrow-body-style": ["error", "as-needed"],
       "padding-line-between-statements": [
         "error",
@@ -104,6 +94,16 @@ const config = tseslint.config(
             order: "asc",
             caseInsensitive: true,
           },
+        },
+      ],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          ts: "never",
+          tsx: "never",
+          js: "never",
+          jsx: "never",
         },
       ],
     },

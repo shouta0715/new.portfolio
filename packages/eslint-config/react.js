@@ -33,6 +33,7 @@ const config = tseslint.config(
     rules: {
       ...reactHooksPlugin.configs.recommended.rules,
       "react/require-default-props": "off",
+      "react/react-in-jsx-scope": "off",
       "react/jsx-props-no-spreading": "off",
       "react/jsx-no-bind": "off",
       "react/prop-types": "off",
