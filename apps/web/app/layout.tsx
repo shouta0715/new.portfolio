@@ -1,7 +1,8 @@
-import { cn } from "@/lib/cn";
-import "@package/tailwind-config/global.css";
 import { GeistSans as geistSans } from "geist/font/sans";
 import { Noto_Sans_JP } from "next/font/google";
+import { cn } from "@/lib/cn";
+
+import "@/styles/globals.css";
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
@@ -10,15 +11,15 @@ const notoSans = Noto_Sans_JP({
 });
 
 type Props = {
-  children: Readonly<React.ReactNode>;
+  children: React.ReactNode;
 };
 
-export default function RootLayout({ children }: Props) {
+export default async function RootLayout({ children }: Props) {
   return (
     <html
-      lang="ja"
-      className={cn(geistSans.variable, notoSans.variable, "font-noto-sans")}
       suppressHydrationWarning
+      className={cn(geistSans.variable, notoSans.variable, "font-noto-sans")}
+      lang="ja"
     >
       <body className="bg-background-100 dark text-gray-1000">{children}</body>
     </html>
