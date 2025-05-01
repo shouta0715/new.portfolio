@@ -57,13 +57,13 @@ importers:
         specifier: ^1.2.8
         version: 1.2.8
     devDependencies:
-      '@repo/eslint-config':
+      '@package/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/tailwind-config':
+      '@package/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@repo/typescript-config':
+      '@package/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
