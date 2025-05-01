@@ -1,2 +1,2 @@
-@import "@repo/tailwind-config/global.css";
+@import "@package/tailwind-config/global.css";
 @import "tw-animate-css";
