@@ -14,11 +14,11 @@ export default function Home() {
     <div className="text-2xl font-bold">
       <p>Hello World</p>
       <p className="bg-amber-100 text-amber-900">こんにちは</p>
-      <ul className="flex gap-4 flex-col mt-10">
+      <ul className="mt-10 flex flex-col gap-4">
         {colors.map((color) => (
-          <li key={color} className="flex gap-4 items-center">
+          <li key={color} className="flex items-center gap-4">
             <p
-              className="text-xl w-20"
+              className="w-20 text-xl"
               style={{
                 color: `var(--color-${color}-900)`,
               }}

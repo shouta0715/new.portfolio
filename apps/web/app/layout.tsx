@@ -21,7 +21,7 @@ export default async function RootLayout({ children }: Props) {
       className={cn(geistSans.variable, notoSans.variable, "font-noto-sans")}
       lang="ja"
     >
-      <body className="bg-background-100 dark text-gray-1000">{children}</body>
+      <body className="bg-background-100 text-gray-1000">{children}</body>
     </html>
   );
 }
